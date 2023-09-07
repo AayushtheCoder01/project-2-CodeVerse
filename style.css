@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    /* background-color: #2b3245; */
+} 
+.container{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: 7fr 1fr;
+}
+.header{
+    grid-area: 1/1/1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2.3rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    background-color: #0e1525;
+}
+.navbar{
+    padding-left: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2333;
+}
+.nav-item{
+    padding-right: 3.5rem;
+    font-family: 'Roboto Slab', serif;
+    justify-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.nav-item:hover{
+    color: #1beea1eb;
+    font-family: 'Roboto', sans-serif;
+}
+span{
+    font-size: 4.4rem;
+    padding: 4px;
+    color: #1beea1eb;
+}
+.body-container{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    height: auto;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.heading{
+    padding-left: 6.2rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+.para{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+@media(max-width:850px) {
+    .heading{
+    padding-left: .4rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    justify-content: flex-start;
+}
+.body-container{
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    height: auto;
+    display: grid;
+    grid-template-rows: 3% 97%;
+}
+.navbar{
+    display: none;
+}
+.para{
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
+.container{
+    height: 12vh;
+}
+.header{
+    font-size: 1.5rem;
+}
+span{
+    font-size: 3rem;
+}
+}
+.cards{
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+margin-top: 2rem;
+display: flex;
+justify-content: space-around;
+}
+img{
+margin: 1.5rem;
+height: 150px;
+width: 150px;
+border-radius: 3px;
+transition: all ease .4s;
+}
+.c{
+    padding: 1rem;
+color: rgb(0, 0, 0);
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: whitesmoke;
+width: 250px;
+height: auto;
+border-radius: 5px;
+font-family: 'Nunito Sans', sans-serif;
+font-size: 1.5rem;
+margin-bottom: 2.5rem;
+margin-right: 1rem;
+}
+.cards-h2{
+margin-top: 1rem;
+font-family: 'Roboto', sans-serif;
+}
+.front-basics{
+font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+color: #1beea1eb;
+text-align: center;
+font-size: 4rem;
+padding-bottom: 1.5rem;
+margin-top: 1rem;
+}
+img:hover{
+scale: 1.2;
+}
+footer{
+    height: 40vh;
+    background-color: #0e1525;
+    height: 100%;
+}
+.footer-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 15% 85%;
+    padding: 1px;
+    margin-top: 8rem;
+}
+.logo{
+    grid-area: 2/2/2/2;
+    margin-bottom: 2rem;
+}
+.footer-h1{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+.footer-img{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    height: 50px;
+    width: 50px;
+}
+.footer-p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.show{
+    height: 1.8rem;
+    width: 6rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 0;
+    background-color: #1cc573f4;
+    color: white;
+    border-radius: 5px;
+}
+@media(max-width:850px){
+    .c{
+        width: 170px;
+    }
+    .footer-h1{
+        font-size: 2rem;
+    }
+    .footer-img{
+        height: 25px;
+        width: 25px;
+    }
+
+}
+@media(max-width:650px){
+    .c{
+        width: 200px;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .front-basics{
+        font-size: 3rem;
+    }
+}
+.backend{
+    margin-top: 5rem;
+}
