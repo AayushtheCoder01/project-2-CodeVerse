@@ -3,9 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>CodeVerse</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+<body>
+    <div class="container">
+        <div class="header"><h1>.CodeVerse<span>></span></h1></div>
+        <div class="navbar">
+            <p class="nav-item">Home</p>
+            <p class="nav-item">About</p>
+            <p class="nav-item">Contact</p>
+            <p class="nav-item">python</p>
+            <p class="nav-item">javascript</p>
+            <p class="nav-item nav-night">Night</p>
+            
+        </div>
+    </div>
+
+    <div class="body-container">
+        <div class="heading"><h2>
+            <span>Web</span>Development
+        </h2></div>
+        <div class="para">
+            <p class="para-txt">
+                Web development is a dynamic and ever-evolving field that plays a pivotal role in shaping the digital landscape. It encompasses a wide range of activities aimed at creating and maintaining websites and web applications.
+                Web developers utilize a plethora of programming languages and technologies such as <b>HTML, CSS, JavaScript</b>, and various backend languages like <b>Python, Ruby, or PHP</b>. These professionals work on both the client-side and server-side of web applications, ensuring seamless user experiences.
+                The importance of responsive design, accessibility, and user interface optimization cannot be overstated. Web developers also delve into database management, security measures, and performance optimization to deliver robust and secure web solutions.
+
+                In today's interconnected world, web development is essential for businesses, organizations, and individuals looking to establish an online presence and engage with their target audience effectively. Keeping up with the latest trends and technologies is crucial in this field, making continuous learning a fundamental aspect of a web developer's journey. The future of web development promises exciting advancements, including AI integration, immersive web experiences, and enhanced cybersecurity measures.
+            </p>
+        </div>
+    </div>
+    <h2 class="front-basics"><b>Front-End</b></h2>
+    <div class="cards">
+        <div class="c html">
+            <h2 class="cards-h2">HTML</h2>
+            <img src="./html-logo.png" alt="html-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+        <div class="c javascript">
+            <h2 class="cards-h2">Javascript</h2>
+            <img src="./JavaScript-logo.png" alt="javascript-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+        <div class="c css">
+            <h2 class="cards-h2">CSS</h2>
+            <img src="./css-logo.webp" alt="css-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+    </div>
+    <h2 class="backend front-basics"><b>Back-End</b></h2>
+    <div class="cards">
+        <div class="c html">
+            <h2 class="cards-h2">ASP.Net</h2>
+            <img src="./asp.net-logo.webp" alt="html-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+        <div class="c javascript">
+            <h2 class="cards-h2">Node.js</h2>
+            <img src="./node-js-logo.png" alt="javascript-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+        <div class="c css">
+            <h2 class="cards-h2">Django</h2>
+            <img src="./django-logo.png" alt="css-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+    </div>
+    <h2 class="backend front-basics"><b>DataBase</b></h2>
+    <div class="cards">
+        <div class="c html">
+            <h2 class="cards-h2">SQL</h2>
+            <img src="./SQL.logo.png" alt="html-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+        <div class="c javascript">
+            <h2 class="cards-h2">MongoDB</h2>
+            <img src="./Mongo_DB-logo.webp" alt="javascript-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+        <div class="kfr c css">
+            <h2 class="cards-h2">MySQL</h2>
+            <img src="./my_SQL-logo.png" alt="css-logo">
+            <button class="show ht-btn">Read More</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <img class="footer-img" src="./copyright_FILL0_wght400_GRAD0_opsz24.png" alt="copyright">
+            </div>
+            <div class="logo">
+                <h1 class="footer-h1">CodeVerse<span>></span></h1>
+                <p class="footer-p">Thanks for visiting our website we are very glad that you have visited our website. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dolorem fugiat voluptatibus dicta est distinctio ipsum optio earum quae dolor nulla accusamus ipsa, id dolorum ipsam illo nobis, hic repudiandae?</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        var c = 0;
+            $(".nav-night").on("click", function(){
+                if(c%2===0){
+                    $("html").css("background-color", "#2b3245")
+                    $(".body-container").css("color", "white")
+                    $(".nav-night").text("Day")
+                    $(".c").css("background-color","#0e1525")
+                    $(".cards-h2").css("color","white")
+                    $(".cards").css("background-color","#1c2333")
+                    c++
+                }else{
+                    $("html").css("background-color", "white")
+                    $(".body-container").css("color", "black")
+                    $(".nav-night").text("Night")
+                    $(".c").css("background-color","whitesmoke")
+                    $(".cards-h2").css("color","black")
+                    $(".cards").css("background-color","white")
+                    c++
+                }
+            })
+            $("")
+    </script>
 </body>
 </html>
